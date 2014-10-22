@@ -1,48 +1,20 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+---
+layout: default
+---
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+<div class="home">
 
-    <title>hkminegod at Github by hkminegod</title>
-  </head>
+  <h1>Posts</h1>
 
-  <body>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
-    <header>
-      <div class="container">
-        <h1>hkminegod at Github</h1>
-        <h2>Github Projects by hkminegod</h2>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-        <section id="downloads">
-          <a href="https://github.com/hkminegod" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
-
-    <div class="container">
-      <section id="main_content">
-        <h3>
-<a name="welcome-to-the-github-page-of-hkminegod" class="anchor" href="#welcome-to-the-github-page-of-hkminegod"><span class="octicon octicon-link"></span></a>Welcome to The Github Page of hkminegod</h3>
-
-<p>Hello. Welcome to my github page!</p>
-
-<h3>
-<a name="minecraft-bukkit-spigot-and-glowstone" class="anchor" href="#minecraft-bukkit-spigot-and-glowstone"><span class="octicon octicon-link"></span></a>Minecraft, Bukkit, Spigot and Glowstone</h3>
-
-<p>I have created and contributed to several bukkit plugins. I am also planning to contribute to Glowstone, an open source Minecraft server written from scratch.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>My website is currently under construction. It will be back soon!</p>
-      </section>
-    </div>
-
-    
-  </body>
-</html>
+</div>
