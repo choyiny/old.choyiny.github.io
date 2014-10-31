@@ -127,12 +127,22 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
     font-family:'Shadows Into Light', cursive;
     font-weight:normal;
     font-size:70px;
-    color:#FDF9F4; 
+    color:#FDF9F4;
+    @media (max-width 500px) {
+        .title {
+            font-size: 40px;
+        }
+    }
 }
 .subtitle { 
     line-height:.9em;
     font-size:35px;
     margin-top:0;
+    @media (max-width 500px) {
+        .subtitle {
+            font-size: 25px;
+        }
+    }
 }
 .tagline { 
     font-size:1.4em;
@@ -224,19 +234,4 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 }
 .text-shadows .mainmenu .dropdown-menu a:hover { 
     text-shadow:none;
-}
-p.gamer, p.dev, p.student {
-    display:none;
-}
-h2 span {
-    cursor: pointer;
-}
-
-@media max-width 500px {
-    .title {
-        font-size: 40px;
-    }
-    .subtitle {
-        font-size: 25px;
-    }
 }
