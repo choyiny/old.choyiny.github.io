@@ -1,20 +1,85 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Hi, I am Cho Yin.">
+        <meta name="author" content="Cho Yin">
+        <title>Hi, I'm Cho Yin.</title>
+        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="shortcut icon" href="favicon.png" type="image/png"/>
+    </head>
+    <body class="text-shadows">
+        <nav class="mainmenu">
+            <div class="container">
+                <div class="dropdown">
+                    <button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    <!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li><a href="#head" class="active">Hello</a></li>
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#contact">Get in touch</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="section" id="head">
+            <div class="container">
 
-<div class="home">
+                <div class="row">
+                    <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">	
 
-  <h1>Posts</h1>
+                        <h1 class="title" id="choyin">Hi I'm Cho Yin</h1>
+                        <h2 class="subtitle">
+                            <span class="student">Student</span>, 
+                            <span class="dev">Developer</span>, 
+                            <span class="gamer">Gamer</span>
+                        </h2>
+                        <p class="student">I'm Cho Yin.</p>
+                        <p class="gamer">IGN: hkminegod.</p>
+                        <p class="dev">&lt/Cho Yin&gt</p>
+                    </div>
+                </div>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+            </div>
+        </section>
+        <section class="section" id="about">
+            <div class="container">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+                <h2 class="text-center title">About me</h2>
+                <div class="row">
+                    <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">    
+                        <p class="lead">I am cool.</p>
 
-</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="contact">
+            <div class="container">
+
+                <h2 class="text-center title">Get in touch</h2>
+
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 text-center">
+                        <p class="lead">You can find me in many different places.</p>
+                        <ul class="list-inline list-social">
+                            <li><a href="https://twitter.com/choyiny" class="btn btn-link"><i class="fa fa-twitter fa-fw"></i> Twitter</a></li>
+                            <li><a href="https://github.com/hkminegod" class="btn btn-link"><i class="fa fa-github fa-fw"></i> Github</a></li>
+                            <li><a href="http://youtube.com/techmastary" class="btn btn-link"><i class="fa fa-youtube fa-fw"></i> Youtube</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <script src="assets/js/modern.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
