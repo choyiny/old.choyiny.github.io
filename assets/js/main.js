@@ -22,9 +22,4 @@ jQuery(document).ready(function($) {
 		}
 		return false;
 	});
-    
-    $("h2 span").click(function () {
-        var selected = $(this).attr("class");
-        $("#choyin").text($("p." + selected).text());
-    });
 });
