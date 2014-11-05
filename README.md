@@ -18,7 +18,7 @@ Pages
 
 Credits
 ------------
-This website's menu uses GetTemplate's Magister theme. You can check it out here: [GetTemplate](http://www.gettemplate.com/).
+This website's menu is from GetTemplate's Magister theme. You can check it out here: [GetTemplate](http://www.gettemplate.com/).
 
 Copyright
 ------------
