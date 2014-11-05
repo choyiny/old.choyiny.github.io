@@ -2,12 +2,3 @@
 title: hkminegod
 email: i@choyin.me
 description: Hi. I am hkminegod @ Github
-
-# Postal address (add as many lines as necessary)
-address:
-  - line: 127.0.0.1
-  - line: Localhost
-
-# Build settings
-markdown: kramdown
-permalink: pretty
