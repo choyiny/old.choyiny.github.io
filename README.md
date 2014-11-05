@@ -16,6 +16,10 @@ Pages
 - Sandbox
 - Find Me
 
+Credits
+------------
+This website's menu uses GetTemplate's Magister theme. You can check it out here: [GetTemplate](http://www.gettemplate.com/).
+
 Copyright
 ------------
 hkminegod @ Github Pages is currently open-source software released under the MIT license. Please see
