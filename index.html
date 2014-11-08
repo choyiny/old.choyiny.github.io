@@ -11,6 +11,7 @@
         <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/main.css">
+        <link href="https://vjs.zencdn.net/4.10/video-js.css" rel="stylesheet">
         <link rel="shortcut icon" href="favicon.png" type="image/png"/>
     </head>
     <body class="text-shadows">
@@ -114,16 +115,21 @@
                 <h2 class="text-center title">Sandbox zone</h2>
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <p>This is a test of TogetherJS</p>
-                        <button type="button" class="btn btn-success" onclick="TogetherJS(this); return false;">Start TogetherJS</button>
+                        <video id="glowstone" class="center video-js vjs-default-skin vjs-big-play-centered"
+                               controls preload="auto" width="640" height="400"
+                               poster="http://video-js.zencoder.com/oceans-clip.png"
+                               data-setup='{ "techOrder": ["youtube"], "src": "https://www.youtube.com/watch?v=CIHFHOfsPkg" }'>
+                            <p class="vjs-no-js">To view this video please enable JavaScript.</p>
+                        </video>
                     </div>
                 </div>
             </div>
         </section>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-        <script src="https://togetherjs.com/togetherjs-min.js"></script>
+        <script src="https://vjs.zencdn.net/4.10/video.js"></script>
         <script src="assets/js/modern.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/youtube.js"></script>
     </body>
 </html>
