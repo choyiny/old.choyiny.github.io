@@ -10,6 +10,7 @@ body p {
 	font-family: 'Roboto', sans-serif;	font-size:17px;
 	line-height:5px;
 }
+
 ol {
     counter-reset: li; /* Initiate a counter */
     list-style: none; /* Remove default numbering */
@@ -46,8 +47,6 @@ ol ol {
 }
 
 .rounded-list a:before{
-    content: counter(li);
-    counter-increment: li;
     position: absolute; 
     left: -1.3em;
     top: 50%;
@@ -68,6 +67,8 @@ ol ol {
 
 <body>
  <p><strong>Updates and Announcements</strong></p>
+ <ol class="rounded-list">
   <li><a href="">Upcoming Christmas Party is happening at 12th Dec 2014! Click here for more info.</a></li>
+  </ol>
 </body>
 </html>
