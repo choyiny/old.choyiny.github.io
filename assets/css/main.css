@@ -33,7 +33,7 @@ body {
     float:left;
     display:block;
     padding: 9px 10px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0);
     background-image: none;
     border: 0 none;
     top:0px; 
@@ -187,7 +187,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
     background: rgba(255,255,255,.5);
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
-    background: rgba(255,255,255,.8);
+    background: rgba(255,255,255,.6);
 }
 .btn-primary {
     background: rgba(255,255,255,.2);
