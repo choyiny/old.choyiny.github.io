@@ -23,4 +23,4 @@ This website's menu is from GetTemplate's Magister theme. You can check it out h
 Copyright
 ------------
 hkminegod @ Github Pages is currently open-source software released under the MIT license. Please see
-the `LICENSE` file for details.
+the `LICENSE.md` file for details.
