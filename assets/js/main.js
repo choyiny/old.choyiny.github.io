@@ -6,19 +6,31 @@ var section_hide_time = 400;
 var section_show_time = 800;
 
 // jQuery stuff
-jQuery(document).ready(function($) {
-
+jQuery(document).ready(function ($) {
+    
+    //Typing
+    $(function () {
+        $(".subtitle").typed({
+            strings: ["I ♥ programming", "IGN: hkminegod", "</i write code>", "Student, Developer, Gamer"],
+            showCursor: false,
+            contentType: 'text',
+            backDelay: 1000,
+            typeSpeed: 10,
+            backSpeed: 10
+        });
+    });
+    
 	// Switch section
-	$("a", '.mainmenu').click(function() {
-		if( ! $(this).hasClass('active') ) { 
+	$("a", '.mainmenu').click(function () {
+		if (!$(this).hasClass('active')) {
 			current_item = this;
 			// close all visible divs with the class of .section
-			$('.section:visible').fadeOut( section_hide_time, function() { 
-				$('a', '.mainmenu').removeClass( 'active' );  
-				$(current_item).addClass( 'active' );
-				var new_section = $( $(current_item).attr('href') );
-				new_section.fadeIn( section_show_time );
-			} );
+			$('.section:visible').fadeOut(section_hide_time, function () {
+				$('a', '.mainmenu').removeClass('active');
+				$(current_item).addClass('active');
+				var new_section = $($(current_item).attr('href'));
+				new_section.fadeIn(section_show_time);
+			});
 		}
 		return false;
 	});
