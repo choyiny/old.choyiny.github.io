@@ -11,7 +11,7 @@ jQuery(document).ready(function ($) {
     //Typing
     $(function () {
         $(".subtitle").typed({
-            strings: ["I ♥ programming", "IGN: hkminegod", "</i write code>", "Student, Developer, Gamer"],
+            strings: ["I ♥ programming", "</i write code>", "IGN: hkminegod", "Student, Developer, Gamer"],
             showCursor: false,
             contentType: 'text',
             backDelay: 1000,
