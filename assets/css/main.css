@@ -1,0 +1,42 @@
+body {
+    font-family: 'Oxygen', sans-serif;
+    background-color: #E9EAEA;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: white;
+    border-color: white;
+}
+
+.navbar {
+    margin-bottom: 0;
+    min-height: 70px;
+}
+
+.navbar-nav > li > a {
+    line-height: 40px;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav > li > a {
+        line-height: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .unav {
+        margin-right: 3%;
+    }
+    .navbar-header .navbar-brand {
+        height: 75px;
+    }
+}
+
+
+}
+.content {
+    background-color: #E9EAEA;
+}
